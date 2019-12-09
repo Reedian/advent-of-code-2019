@@ -1,12 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    colorize (0.8.1)
     minitest (5.13.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  colorize
   minitest
 
 BUNDLED WITH

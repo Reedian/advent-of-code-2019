@@ -20,9 +20,17 @@ class TestLayers < Minitest::Test
     assert_equal(1, ImageProcessor.layer_code(test_input_object.find_fewest_0_layer))
   end
 
+  def test_decode
+    assert_equal([[0,1],[1,0]], test_input_object_part_2.decode)
+  end
+
   private
 
   def test_input_object
     ImageProcessor.new('test_input.txt', width: 3, height: 2)
+  end
+
+  def test_input_object_part_2
+    ImageProcessor.new('test_input_part_2.txt', width: 2, height: 2)
   end
 end
