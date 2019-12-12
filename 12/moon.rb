@@ -29,4 +29,8 @@ class Moon
   def to_s
     "pos=#{position.to_s}, vel=#{velocity.to_s}"
   end
+
+  def dup
+    self.class.new([position.x, position.y, position.z])
+  end
 end

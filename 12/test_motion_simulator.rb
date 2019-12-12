@@ -19,6 +19,11 @@ class TestMotionSimulator < Minitest::Test
     test_moon_velocity({ x: 1, y: -1, z: -1 }, result[3])
 
     test_system_energy(179, result)
+
+    assert_equal(
+      2772,
+      test_input_object_1.calculate_period
+    )
   end
 
   def test_second_assertion
@@ -37,6 +42,11 @@ class TestMotionSimulator < Minitest::Test
     test_moon_velocity({ x:  7, y:  1, z:  1 }, result[3])
 
     test_system_energy(1940, result)
+
+    assert_equal(
+      4686774924,
+      test_input_object_2.calculate_period
+    )
   end
 
   private
